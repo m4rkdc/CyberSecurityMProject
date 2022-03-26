@@ -1,0 +1,860 @@
+{
+	"name": "ICS",
+	"versions": {
+		"attack": "10",
+		"navigator": "4.5.4",
+		"layer": "4.2"
+	},
+	"domain": "ics-attack",
+	"description": "ICS TTPs used in 2015 Ukraine Power Grid attack",
+	"filters": {
+		"platforms": [
+			"Field Controller/RTU/PLC/IED",
+			"Safety Instrumented System/Protection Relay",
+			"Device Configuration/Parameters",
+			"Control Server",
+			"Input/Output Server",
+			"Data Historian",
+			"Human-Machine Interface",
+			"Engineering Workstation",
+			"None",
+			"Windows"
+		]
+	},
+	"sorting": 0,
+	"layout": {
+		"layout": "side",
+		"aggregateFunction": "average",
+		"showID": false,
+		"showName": true,
+		"showAggregateScores": false,
+		"countUnscored": false
+	},
+	"hideDisabled": false,
+	"techniques": [
+		{
+			"techniqueID": "T0865",
+			"tactic": "initial-access-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0863",
+			"tactic": "execution-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0800",
+			"tactic": "inhibit-response-function",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0878",
+			"tactic": "inhibit-response-function",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0802",
+			"tactic": "collection-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0803",
+			"tactic": "inhibit-response-function",
+			"color": "#fc6b6b",
+			"comment": "Stage 14.2: modified system firmware render the Serial-to-Ethernet converters inoperable, so that manual access to the breakers is needed to restore power supply",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0804",
+			"tactic": "inhibit-response-function",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0805",
+			"tactic": "inhibit-response-function",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0806",
+			"tactic": "impair-process-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0858",
+			"tactic": "execution-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0858",
+			"tactic": "evasion-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0807",
+			"tactic": "execution-ics",
+			"color": "#fc6b6b",
+			"comment": "Step 13: attackers leverage stolen VPN credentials to access DMS servers and remote access to HMI workstations to disrupt power distribution to customers",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0885",
+			"tactic": "command-and-control-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0884",
+			"tactic": "command-and-control-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0879",
+			"tactic": "impact-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0809",
+			"tactic": "inhibit-response-function",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0811",
+			"tactic": "collection-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0812",
+			"tactic": "lateral-movement-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0813",
+			"tactic": "impact-ics",
+			"color": "#fc6b6b",
+			"comment": "Stage 14.2: modified system firmware render the Serial-to-Ethernet converters inoperable, so that manual access to the breakers is needed to restore power supply",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0814",
+			"tactic": "inhibit-response-function",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0815",
+			"tactic": "impact-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0868",
+			"tactic": "collection-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0816",
+			"tactic": "inhibit-response-function",
+			"color": "#fc6b6b",
+			"comment": "Stage 17: KillDisk erases logs and MBR partitions from RTUs",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0817",
+			"tactic": "initial-access-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0871",
+			"tactic": "execution-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0819",
+			"tactic": "initial-access-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0820",
+			"tactic": "evasion-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0890",
+			"tactic": "privilege-escalation-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0866",
+			"tactic": "lateral-movement-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0866",
+			"tactic": "initial-access-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0822",
+			"tactic": "initial-access-ics",
+			"color": "#e6d60d",
+			"comment": "Stage 9.1: attackers leverage stolen credentials to access the ICS network through VPN access to the DMS server",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0823",
+			"tactic": "execution-ics",
+			"color": "#fc6b6b",
+			"comment": "Step 13: attackers leverage stolen VPN credentials to access DMS servers and remote access to HMI workstations to disrupt power distribution to customers",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0874",
+			"tactic": "execution-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0874",
+			"tactic": "privilege-escalation-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0877",
+			"tactic": "collection-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0872",
+			"tactic": "evasion-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0883",
+			"tactic": "initial-access-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0867",
+			"tactic": "lateral-movement-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0826",
+			"tactic": "impact-ics",
+			"color": "#fc6b6b",
+			"comment": "Step 13: attackers leverage stolen VPN credentials to access DMS servers and remote access to HMI workstations to disrupt power distribution to customers\n\nStage 17: KillDisk erases logs and MBR partitions from RTUs",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0827",
+			"tactic": "impact-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0828",
+			"tactic": "impact-ics",
+			"color": "#fc6b6b",
+			"comment": "Step 13: attackers leverage stolen VPN credentials to access DMS servers and remote access to HMI workstations to disrupt power distribution to customers\n\nStage 17: KillDisk erases logs and MBR partitions from RTUs",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0837",
+			"tactic": "impact-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0880",
+			"tactic": "impact-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0829",
+			"tactic": "impact-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0830",
+			"tactic": "collection-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0835",
+			"tactic": "inhibit-response-function",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0831",
+			"tactic": "impact-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0832",
+			"tactic": "impact-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0849",
+			"tactic": "evasion-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0838",
+			"tactic": "inhibit-response-function",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0821",
+			"tactic": "execution-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0836",
+			"tactic": "impair-process-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0889",
+			"tactic": "persistence-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0839",
+			"tactic": "persistence-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0839",
+			"tactic": "impair-process-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0801",
+			"tactic": "collection-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0834",
+			"tactic": "execution-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0840",
+			"tactic": "discovery-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0842",
+			"tactic": "discovery-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0861",
+			"tactic": "collection-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0843",
+			"tactic": "lateral-movement-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0845",
+			"tactic": "collection-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0873",
+			"tactic": "persistence-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0886",
+			"tactic": "initial-access-ics",
+			"color": "#e6d60d",
+			"comment": "Stage 9.1: attackers leverage stolen credentials to access the ICS network through RDP access to the HMI workstations",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0886",
+			"tactic": "lateral-movement-ics",
+			"color": "#e6d60d",
+			"comment": "Stage 9.1: attackers leverage stolen credentials to access the ICS network through RDP access to the HMI workstations",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0846",
+			"tactic": "discovery-ics",
+			"color": "#6baed6",
+			"comment": "Stage 9.2: attackers actively perform information gathering on the ICS network ",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0888",
+			"tactic": "discovery-ics",
+			"color": "#6baed6",
+			"comment": "Stage 9.2: attackers actively perform information gathering on the ICS network ",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0847",
+			"tactic": "initial-access-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0848",
+			"tactic": "initial-access-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0851",
+			"tactic": "evasion-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0851",
+			"tactic": "inhibit-response-function",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0852",
+			"tactic": "collection-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0853",
+			"tactic": "execution-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0881",
+			"tactic": "inhibit-response-function",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0856",
+			"tactic": "evasion-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0856",
+			"tactic": "impair-process-control",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0869",
+			"tactic": "command-and-control-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0862",
+			"tactic": "initial-access-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0857",
+			"tactic": "persistence-ics",
+			"color": "#fd8d3c",
+			"comment": "Stage 14.1: attackers deliver malicious firmware to Serial-to-Ethernet converters",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0857",
+			"tactic": "inhibit-response-function",
+			"color": "#fd8d3c",
+			"comment": "Stage 14.1: attackers deliver malicious firmware to Serial-to-Ethernet converters",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0882",
+			"tactic": "impact-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0855",
+			"tactic": "impair-process-control",
+			"color": "#fc6b6b",
+			"comment": "Stage 13: attackers leverage stolen VPN credentials to access DMS servers and remote access to HMI workstations to disrupt power distribution to customers by issuing unauthorized command messages to the trip breakers\n",
+			"enabled": true,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0864",
+			"tactic": "initial-access-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0859",
+			"tactic": "persistence-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0859",
+			"tactic": "lateral-movement-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0860",
+			"tactic": "initial-access-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0887",
+			"tactic": "discovery-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		},
+		{
+			"techniqueID": "T0887",
+			"tactic": "collection-ics",
+			"color": "",
+			"comment": "",
+			"enabled": false,
+			"metadata": [],
+			"showSubtechniques": false
+		}
+	],
+	"gradient": {
+		"colors": [
+			"#ff6666ff",
+			"#ffe766ff",
+			"#8ec843ff"
+		],
+		"minValue": 0,
+		"maxValue": 100
+	},
+	"legendItems": [
+		{
+			"color": "#3182bd",
+			"label": "Recoinassance"
+		},
+		{
+			"color": "#fce93b",
+			"label": "Initial foothold"
+		},
+		{
+			"color": "#e6550d",
+			"label": "Persistence"
+		},
+		{
+			"color": "#e60d0d",
+			"label": "Exploitation/Asset compromise"
+		}
+	],
+	"metadata": [],
+	"showTacticRowBackground": false,
+	"tacticRowBackground": "#dddddd",
+	"selectTechniquesAcrossTactics": true,
+	"selectSubtechniquesWithParent": false
+}
